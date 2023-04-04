@@ -63,11 +63,15 @@ Choisissez un mode de connexion (mysqli ou PDO) et créez une page ``list.php`` 
 Créez une page ``ajout_user.php`` permettant, via un formulaire POST d'insérer de nouvelles entrées dans la base.
 Le mot de passe ne doit pas être en clair dans la base.
 
+### 5.3 classe
+Créer une classe singleton afin de gérer la connexion à votre BDD.
+
 ## 6 Session
 Créez une page de connexion utilisant les valeurs de la table de l'exercice 5. 
 L'utilisateur doit pouvoir rester connecté (utilisation de la session) et pouvoir choisir de se déconnecter.
 
 ## 7 Backend
+### 7.1
 * Créez une page accessible pour les utilisateurs connectés disposant des opérations CRUD (Create, Read, Update, Delete) sur une table : ``messages (id , titre, auteur, date_creation, txt)``.
 
 | id  | titre | auteur | date | txt | action  |
@@ -75,5 +79,7 @@ L'utilisateur doit pouvoir rester connecté (utilisation de la session) et pouvo
 |     |       |        |      |     | C,R,U,D |
 |     |       |        |      |     |         |
 
-* Protégez-vous des attaques basiques par injection (SQL, JS).
-* Protégez-vous des attaques XSS.
+* Protégez-vous des attaques basiques par injection (SQL, JS), XSS, CSRF.
+* Utilisez une classe pour gérer les actions CRUD sur votre table ``messages``.
+### 7.2 Namespace
+Mettez vos classes dans des fichiers séparés et appelez les en utilisant leur ``namespace``
