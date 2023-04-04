@@ -19,6 +19,7 @@ $_REQUEST
 $_ENV
 ```
 Rq : tester les fonctions ``echo`` et ``var_dump``
+### 2.2 Utilisez ``phpinfo()``
 
 ## 3 Paramètres HTTP
 Créer un formulaire HTML et afficher les valeurs remplies par l'utilisateur.
