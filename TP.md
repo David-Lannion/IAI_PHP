@@ -52,7 +52,7 @@ Connectez-vous à mysql en utilisant chacun des moyens suivants :
 #### mysqli
 Voir exemple dans index.php
 #### PDO
-``new PDO(’mysql:host=localhost;dbname=iai_php’, mon_login, mon_password);``
+``new PDO('mysql:host=localhost;dbname=iai_php', mon_login, mon_password);``
 
 
 Gérez le cas ou la connexion ne fonctionnerait pas (die/try_except/...)
